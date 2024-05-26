@@ -1,0 +1,25 @@
+{
+	"revision" : 0,
+	"rules" : 
+	[
+		{
+			"outputs" : [],
+			"primary-output" : "Testing/CMakeFiles/BUSTESTS.dir/__/NETSOLVERS/LOADUP.f90.o",
+			"provides" : 
+			[
+				{
+					"compiled-module-path" : "Testing/loadup.mod",
+					"is-interface" : true,
+					"logical-name" : "loadup.mod"
+				}
+			],
+			"requires" : 
+			[
+				{
+					"logical-name" : "iso_fortran_env.mod"
+				}
+			]
+		}
+	],
+	"version" : 0
+}

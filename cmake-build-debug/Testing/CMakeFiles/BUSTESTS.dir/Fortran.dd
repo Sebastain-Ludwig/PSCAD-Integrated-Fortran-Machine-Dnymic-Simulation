@@ -1,0 +1,15 @@
+ninja_dyndep_version = 1.0
+build Testing/CMakeFiles/BUSTESTS.dir/BUS_TEST.f90.o: dyndep | Testing/busup.mod Testing/compup.mod Testing/loadup.mod
+
+build Testing/CMakeFiles/BUSTESTS.dir/__/NETSOLVERS/BUSUP.f90.o | Testing/busup.mod: dyndep
+  restat = 1
+
+build Testing/CMakeFiles/BUSTESTS.dir/__/NETSOLVERS/COMPUP.f90.o | Testing/compup.mod: dyndep
+  restat = 1
+
+build Testing/CMakeFiles/BUSTESTS.dir/__/NETSOLVERS/LOADUP.f90.o | Testing/loadup.mod: dyndep
+  restat = 1
+
+build Testing/CMakeFiles/BUSTESTS.dir/__/NETSOLVERS/SOLVENET.f90.o | Testing/solvenet.mod: dyndep
+  restat = 1
+

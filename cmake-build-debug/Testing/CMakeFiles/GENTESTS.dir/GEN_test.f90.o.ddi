@@ -1,0 +1,21 @@
+{
+	"revision" : 0,
+	"rules" : 
+	[
+		{
+			"outputs" : [],
+			"primary-output" : "Testing/CMakeFiles/GENTESTS.dir/GEN_test.f90.o",
+			"provides" : [],
+			"requires" : 
+			[
+				{
+					"logical-name" : "compup.mod"
+				},
+				{
+					"logical-name" : "iso_fortran_env.mod"
+				}
+			]
+		}
+	],
+	"version" : 0
+}

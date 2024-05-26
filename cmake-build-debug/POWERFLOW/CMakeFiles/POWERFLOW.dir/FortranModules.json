@@ -1,0 +1,27 @@
+{
+	"modules" : 
+	{
+		"nlpfelup.mod" : 
+		{
+			"bmi" : "/home/sebastian/Project/POWERSYSDYN/FORTRAN SCRIPTS/MACHINE-DYNAMIC-SIMULATION/cmake-build-debug/POWERFLOW/nlpfelup.mod",
+			"is-private" : false
+		},
+		"nlpfinit.mod" : 
+		{
+			"bmi" : "/home/sebastian/Project/POWERSYSDYN/FORTRAN SCRIPTS/MACHINE-DYNAMIC-SIMULATION/cmake-build-debug/POWERFLOW/nlpfinit.mod",
+			"is-private" : false
+		},
+		"nlpfjmsv.mod" : 
+		{
+			"bmi" : "/home/sebastian/Project/POWERSYSDYN/FORTRAN SCRIPTS/MACHINE-DYNAMIC-SIMULATION/cmake-build-debug/POWERFLOW/nlpfjmsv.mod",
+			"is-private" : false
+		},
+		"nlpfjmup.mod" : 
+		{
+			"bmi" : "/home/sebastian/Project/POWERSYSDYN/FORTRAN SCRIPTS/MACHINE-DYNAMIC-SIMULATION/cmake-build-debug/POWERFLOW/nlpfjmup.mod",
+			"is-private" : false
+		}
+	},
+	"references" : {},
+	"usages" : {}
+}

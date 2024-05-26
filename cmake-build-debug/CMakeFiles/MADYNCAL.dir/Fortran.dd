@@ -1,0 +1,33 @@
+ninja_dyndep_version = 1.0
+build CMakeFiles/MADYNCAL.dir/main.f90.o: dyndep | compup.mod solvenet.mod
+
+build CMakeFiles/MADYNCAL.dir/MATHBALIB/BAMTDEFA.f90.o | bamtdefa.mod: dyndep
+  restat = 1
+
+build CMakeFiles/MADYNCAL.dir/MATHBALIB/BAMTFASV.f90.o | bamtfasv.mod: dyndep
+  restat = 1
+
+build CMakeFiles/MADYNCAL.dir/POWERFLOW/NFPFELUP.f90.o | nlpfelup.mod: dyndep
+  restat = 1
+
+build CMakeFiles/MADYNCAL.dir/POWERFLOW/NLPFINIT.f90.o | nlpfinit.mod: dyndep
+  restat = 1
+
+build CMakeFiles/MADYNCAL.dir/POWERFLOW/NLPFJMSV.f90.o | nlpfjmsv.mod: dyndep
+  restat = 1
+
+build CMakeFiles/MADYNCAL.dir/POWERFLOW/NLPFJMUP.f90.o | nlpfjmup.mod: dyndep | nlpfelup.mod
+  restat = 1
+
+build CMakeFiles/MADYNCAL.dir/NETSOLVERS/BUSUP.f90.o | busup.mod: dyndep
+  restat = 1
+
+build CMakeFiles/MADYNCAL.dir/NETSOLVERS/COMPUP.f90.o | compup.mod: dyndep
+  restat = 1
+
+build CMakeFiles/MADYNCAL.dir/NETSOLVERS/LOADUP.f90.o | loadup.mod: dyndep
+  restat = 1
+
+build CMakeFiles/MADYNCAL.dir/NETSOLVERS/SOLVENET.f90.o | solvenet.mod: dyndep
+  restat = 1
+

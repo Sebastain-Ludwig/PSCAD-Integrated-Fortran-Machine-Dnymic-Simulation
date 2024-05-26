@@ -1,0 +1,127 @@
+{
+	"inputs" : 
+	[
+		{
+			"path" : "CMakeLists.txt"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/3.27.8/CMakeSystem.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/sebastian/Project/IDE/Clion/CLion-2023.3.4/clion-2023.3.4/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/sebastian/Project/IDE/Clion/CLion-2023.3.4/clion-2023.3.4/bin/cmake/linux/x64/share/cmake-3.27/Modules/Platform/Linux-Initialize.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/3.27.8/CMakeFortranCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/sebastian/Project/IDE/Clion/CLion-2023.3.4/clion-2023.3.4/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/sebastian/Project/IDE/Clion/CLion-2023.3.4/clion-2023.3.4/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeGenericSystem.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/sebastian/Project/IDE/Clion/CLion-2023.3.4/clion-2023.3.4/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/sebastian/Project/IDE/Clion/CLion-2023.3.4/clion-2023.3.4/bin/cmake/linux/x64/share/cmake-3.27/Modules/Platform/Linux.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/sebastian/Project/IDE/Clion/CLion-2023.3.4/clion-2023.3.4/bin/cmake/linux/x64/share/cmake-3.27/Modules/Platform/UnixPaths.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/sebastian/Project/IDE/Clion/CLion-2023.3.4/clion-2023.3.4/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeFortranInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/sebastian/Project/IDE/Clion/CLion-2023.3.4/clion-2023.3.4/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/sebastian/Project/IDE/Clion/CLion-2023.3.4/clion-2023.3.4/bin/cmake/linux/x64/share/cmake-3.27/Modules/Compiler/IntelLLVM-Fortran.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/sebastian/Project/IDE/Clion/CLion-2023.3.4/clion-2023.3.4/bin/cmake/linux/x64/share/cmake-3.27/Modules/Compiler/IntelLLVM.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/sebastian/Project/IDE/Clion/CLion-2023.3.4/clion-2023.3.4/bin/cmake/linux/x64/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/sebastian/Project/IDE/Clion/CLion-2023.3.4/clion-2023.3.4/bin/cmake/linux/x64/share/cmake-3.27/Modules/Platform/Linux-IntelLLVM-Fortran.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/sebastian/Project/IDE/Clion/CLion-2023.3.4/clion-2023.3.4/bin/cmake/linux/x64/share/cmake-3.27/Modules/Platform/Linux-IntelLLVM.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/sebastian/Project/IDE/Clion/CLion-2023.3.4/clion-2023.3.4/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/sebastian/Project/IDE/Clion/CLion-2023.3.4/clion-2023.3.4/bin/cmake/linux/x64/share/cmake-3.27/Modules/GNUInstallDirs.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/opt/intel/oneapi/mkl/2024.0/lib/cmake/mkl/MKLConfigVersion.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/opt/intel/oneapi/mkl/2024.0/lib/cmake/mkl/MKLConfig.cmake"
+		},
+		{
+			"path" : "MATHBALIB/CMakeLists.txt"
+		},
+		{
+			"path" : "NETSOLVERS/CMakeLists.txt"
+		},
+		{
+			"path" : "POWERFLOW/CMakeLists.txt"
+		},
+		{
+			"path" : "Testing/CMakeLists.txt"
+		}
+	],
+	"kind" : "cmakeFiles",
+	"paths" : 
+	{
+		"build" : "/home/sebastian/Project/POWERSYSDYN/FORTRAN SCRIPTS/MACHINE-DYNAMIC-SIMULATION/cmake-build-debug",
+		"source" : "/home/sebastian/Project/POWERSYSDYN/FORTRAN SCRIPTS/MACHINE-DYNAMIC-SIMULATION"
+	},
+	"version" : 
+	{
+		"major" : 1,
+		"minor" : 0
+	}
+}

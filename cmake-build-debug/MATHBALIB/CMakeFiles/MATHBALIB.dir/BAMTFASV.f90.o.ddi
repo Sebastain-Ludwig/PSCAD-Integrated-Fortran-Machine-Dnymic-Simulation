@@ -1,0 +1,25 @@
+{
+	"revision" : 0,
+	"rules" : 
+	[
+		{
+			"outputs" : [],
+			"primary-output" : "MATHBALIB/CMakeFiles/MATHBALIB.dir/BAMTFASV.f90.o",
+			"provides" : 
+			[
+				{
+					"compiled-module-path" : "MATHBALIB/bamtfasv.mod",
+					"is-interface" : true,
+					"logical-name" : "bamtfasv.mod"
+				}
+			],
+			"requires" : 
+			[
+				{
+					"logical-name" : "iso_fortran_env.mod"
+				}
+			]
+		}
+	],
+	"version" : 0
+}

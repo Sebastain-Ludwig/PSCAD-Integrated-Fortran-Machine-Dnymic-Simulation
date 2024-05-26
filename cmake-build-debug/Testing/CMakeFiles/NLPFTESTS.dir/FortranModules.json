@@ -1,0 +1,37 @@
+{
+	"modules" : 
+	{
+		"bamtdefa.mod" : 
+		{
+			"bmi" : "/home/sebastian/Project/POWERSYSDYN/FORTRAN SCRIPTS/MACHINE-DYNAMIC-SIMULATION/cmake-build-debug/Testing/bamtdefa.mod",
+			"is-private" : false
+		},
+		"bamtfasv.mod" : 
+		{
+			"bmi" : "/home/sebastian/Project/POWERSYSDYN/FORTRAN SCRIPTS/MACHINE-DYNAMIC-SIMULATION/cmake-build-debug/Testing/bamtfasv.mod",
+			"is-private" : false
+		},
+		"nlpfelup.mod" : 
+		{
+			"bmi" : "/home/sebastian/Project/POWERSYSDYN/FORTRAN SCRIPTS/MACHINE-DYNAMIC-SIMULATION/cmake-build-debug/Testing/nlpfelup.mod",
+			"is-private" : false
+		},
+		"nlpfinit.mod" : 
+		{
+			"bmi" : "/home/sebastian/Project/POWERSYSDYN/FORTRAN SCRIPTS/MACHINE-DYNAMIC-SIMULATION/cmake-build-debug/Testing/nlpfinit.mod",
+			"is-private" : false
+		},
+		"nlpfjmsv.mod" : 
+		{
+			"bmi" : "/home/sebastian/Project/POWERSYSDYN/FORTRAN SCRIPTS/MACHINE-DYNAMIC-SIMULATION/cmake-build-debug/Testing/nlpfjmsv.mod",
+			"is-private" : false
+		},
+		"nlpfjmup.mod" : 
+		{
+			"bmi" : "/home/sebastian/Project/POWERSYSDYN/FORTRAN SCRIPTS/MACHINE-DYNAMIC-SIMULATION/cmake-build-debug/Testing/nlpfjmup.mod",
+			"is-private" : false
+		}
+	},
+	"references" : {},
+	"usages" : {}
+}

@@ -1,0 +1,13 @@
+ninja_dyndep_version = 1.0
+build NETSOLVERS/CMakeFiles/NETSOLVERS.dir/BUSUP.f90.o | NETSOLVERS/busup.mod: dyndep
+  restat = 1
+
+build NETSOLVERS/CMakeFiles/NETSOLVERS.dir/COMPUP.f90.o | NETSOLVERS/compup.mod: dyndep
+  restat = 1
+
+build NETSOLVERS/CMakeFiles/NETSOLVERS.dir/LOADUP.f90.o | NETSOLVERS/loadup.mod: dyndep
+  restat = 1
+
+build NETSOLVERS/CMakeFiles/NETSOLVERS.dir/SOLVENET.f90.o | NETSOLVERS/solvenet.mod: dyndep
+  restat = 1
+

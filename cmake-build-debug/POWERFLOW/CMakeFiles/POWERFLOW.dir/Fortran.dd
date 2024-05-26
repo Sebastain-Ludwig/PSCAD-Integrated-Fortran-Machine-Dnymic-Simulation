@@ -1,0 +1,13 @@
+ninja_dyndep_version = 1.0
+build POWERFLOW/CMakeFiles/POWERFLOW.dir/NFPFELUP.f90.o | POWERFLOW/nlpfelup.mod: dyndep
+  restat = 1
+
+build POWERFLOW/CMakeFiles/POWERFLOW.dir/NLPFINIT.f90.o | POWERFLOW/nlpfinit.mod: dyndep
+  restat = 1
+
+build POWERFLOW/CMakeFiles/POWERFLOW.dir/NLPFJMSV.f90.o | POWERFLOW/nlpfjmsv.mod: dyndep
+  restat = 1
+
+build POWERFLOW/CMakeFiles/POWERFLOW.dir/NLPFJMUP.f90.o | POWERFLOW/nlpfjmup.mod: dyndep | POWERFLOW/nlpfelup.mod
+  restat = 1
+

@@ -1,0 +1,17 @@
+{
+	"modules" : 
+	{
+		"bamtdefa.mod" : 
+		{
+			"bmi" : "/home/sebastian/Project/POWERSYSDYN/FORTRAN SCRIPTS/MACHINE-DYNAMIC-SIMULATION/cmake-build-debug/MATHBALIB/bamtdefa.mod",
+			"is-private" : false
+		},
+		"bamtfasv.mod" : 
+		{
+			"bmi" : "/home/sebastian/Project/POWERSYSDYN/FORTRAN SCRIPTS/MACHINE-DYNAMIC-SIMULATION/cmake-build-debug/MATHBALIB/bamtfasv.mod",
+			"is-private" : false
+		}
+	},
+	"references" : {},
+	"usages" : {}
+}

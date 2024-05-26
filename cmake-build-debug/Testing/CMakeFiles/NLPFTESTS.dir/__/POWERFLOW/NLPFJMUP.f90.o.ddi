@@ -1,0 +1,28 @@
+{
+	"revision" : 0,
+	"rules" : 
+	[
+		{
+			"outputs" : [],
+			"primary-output" : "Testing/CMakeFiles/NLPFTESTS.dir/__/POWERFLOW/NLPFJMUP.f90.o",
+			"provides" : 
+			[
+				{
+					"compiled-module-path" : "Testing/nlpfjmup.mod",
+					"is-interface" : true,
+					"logical-name" : "nlpfjmup.mod"
+				}
+			],
+			"requires" : 
+			[
+				{
+					"logical-name" : "iso_fortran_env.mod"
+				},
+				{
+					"logical-name" : "nlpfelup.mod"
+				}
+			]
+		}
+	],
+	"version" : 0
+}

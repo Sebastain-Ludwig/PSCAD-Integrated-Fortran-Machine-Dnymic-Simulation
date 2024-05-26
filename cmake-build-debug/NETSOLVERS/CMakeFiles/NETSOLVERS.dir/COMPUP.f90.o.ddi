@@ -1,0 +1,25 @@
+{
+	"revision" : 0,
+	"rules" : 
+	[
+		{
+			"outputs" : [],
+			"primary-output" : "NETSOLVERS/CMakeFiles/NETSOLVERS.dir/COMPUP.f90.o",
+			"provides" : 
+			[
+				{
+					"compiled-module-path" : "NETSOLVERS/compup.mod",
+					"is-interface" : true,
+					"logical-name" : "compup.mod"
+				}
+			],
+			"requires" : 
+			[
+				{
+					"logical-name" : "iso_fortran_env.mod"
+				}
+			]
+		}
+	],
+	"version" : 0
+}

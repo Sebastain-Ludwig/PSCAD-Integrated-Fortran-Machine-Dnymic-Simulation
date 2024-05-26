@@ -1,0 +1,25 @@
+{
+	"revision" : 0,
+	"rules" : 
+	[
+		{
+			"outputs" : [],
+			"primary-output" : "NETSOLVERS/CMakeFiles/NETSOLVERS.dir/BUSUP.f90.o",
+			"provides" : 
+			[
+				{
+					"compiled-module-path" : "NETSOLVERS/busup.mod",
+					"is-interface" : true,
+					"logical-name" : "busup.mod"
+				}
+			],
+			"requires" : 
+			[
+				{
+					"logical-name" : "iso_fortran_env.mod"
+				}
+			]
+		}
+	],
+	"version" : 0
+}

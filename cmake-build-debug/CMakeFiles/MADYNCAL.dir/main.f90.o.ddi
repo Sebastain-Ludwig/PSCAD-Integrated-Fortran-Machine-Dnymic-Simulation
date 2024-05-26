@@ -1,0 +1,30 @@
+{
+	"revision" : 0,
+	"rules" : 
+	[
+		{
+			"outputs" : [],
+			"primary-output" : "CMakeFiles/MADYNCAL.dir/main.f90.o",
+			"provides" : [],
+			"requires" : 
+			[
+				{
+					"logical-name" : "compup.mod"
+				},
+				{
+					"logical-name" : "f95_precision.mod"
+				},
+				{
+					"logical-name" : "iso_fortran_env.mod"
+				},
+				{
+					"logical-name" : "lapack95.mod"
+				},
+				{
+					"logical-name" : "solvenet.mod"
+				}
+			]
+		}
+	],
+	"version" : 0
+}

@@ -1,0 +1,33 @@
+{
+	"revision" : 0,
+	"rules" : 
+	[
+		{
+			"outputs" : [],
+			"primary-output" : "Testing/CMakeFiles/NLPFTESTS.dir/NLPF_TEST.f90.o",
+			"provides" : [],
+			"requires" : 
+			[
+				{
+					"logical-name" : "bamtdefa.mod"
+				},
+				{
+					"logical-name" : "bamtfasv.mod"
+				},
+				{
+					"logical-name" : "iso_fortran_env.mod"
+				},
+				{
+					"logical-name" : "nlpfinit.mod"
+				},
+				{
+					"logical-name" : "nlpfjmsv.mod"
+				},
+				{
+					"logical-name" : "nlpfjmup.mod"
+				}
+			]
+		}
+	],
+	"version" : 0
+}

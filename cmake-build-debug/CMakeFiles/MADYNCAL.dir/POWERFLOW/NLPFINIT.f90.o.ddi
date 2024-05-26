@@ -1,0 +1,25 @@
+{
+	"revision" : 0,
+	"rules" : 
+	[
+		{
+			"outputs" : [],
+			"primary-output" : "CMakeFiles/MADYNCAL.dir/POWERFLOW/NLPFINIT.f90.o",
+			"provides" : 
+			[
+				{
+					"compiled-module-path" : "nlpfinit.mod",
+					"is-interface" : true,
+					"logical-name" : "nlpfinit.mod"
+				}
+			],
+			"requires" : 
+			[
+				{
+					"logical-name" : "iso_fortran_env.mod"
+				}
+			]
+		}
+	],
+	"version" : 0
+}

@@ -1,0 +1,33 @@
+{
+	"revision" : 0,
+	"rules" : 
+	[
+		{
+			"outputs" : [],
+			"primary-output" : "Testing/CMakeFiles/BUSTESTS.dir/BUS_TEST.f90.o",
+			"provides" : [],
+			"requires" : 
+			[
+				{
+					"logical-name" : "busup.mod"
+				},
+				{
+					"logical-name" : "compup.mod"
+				},
+				{
+					"logical-name" : "f95_precision.mod"
+				},
+				{
+					"logical-name" : "iso_fortran_env.mod"
+				},
+				{
+					"logical-name" : "lapack95.mod"
+				},
+				{
+					"logical-name" : "loadup.mod"
+				}
+			]
+		}
+	],
+	"version" : 0
+}

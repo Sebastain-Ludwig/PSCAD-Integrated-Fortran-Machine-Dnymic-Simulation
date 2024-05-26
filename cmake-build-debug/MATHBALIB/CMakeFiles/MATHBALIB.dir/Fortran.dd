@@ -1,0 +1,7 @@
+ninja_dyndep_version = 1.0
+build MATHBALIB/CMakeFiles/MATHBALIB.dir/BAMTDEFA.f90.o | MATHBALIB/bamtdefa.mod: dyndep
+  restat = 1
+
+build MATHBALIB/CMakeFiles/MATHBALIB.dir/BAMTFASV.f90.o | MATHBALIB/bamtfasv.mod: dyndep
+  restat = 1
+

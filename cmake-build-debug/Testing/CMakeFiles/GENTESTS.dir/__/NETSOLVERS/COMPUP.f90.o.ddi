@@ -1,0 +1,25 @@
+{
+	"revision" : 0,
+	"rules" : 
+	[
+		{
+			"outputs" : [],
+			"primary-output" : "Testing/CMakeFiles/GENTESTS.dir/__/NETSOLVERS/COMPUP.f90.o",
+			"provides" : 
+			[
+				{
+					"compiled-module-path" : "Testing/compup.mod",
+					"is-interface" : true,
+					"logical-name" : "compup.mod"
+				}
+			],
+			"requires" : 
+			[
+				{
+					"logical-name" : "iso_fortran_env.mod"
+				}
+			]
+		}
+	],
+	"version" : 0
+}

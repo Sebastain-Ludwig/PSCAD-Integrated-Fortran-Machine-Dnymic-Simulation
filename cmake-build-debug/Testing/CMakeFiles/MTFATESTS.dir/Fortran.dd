@@ -1,0 +1,9 @@
+ninja_dyndep_version = 1.0
+build Testing/CMakeFiles/MTFATESTS.dir/MTFA_TEST.f90.o: dyndep | Testing/bamtdefa.mod Testing/bamtfasv.mod
+
+build Testing/CMakeFiles/MTFATESTS.dir/__/MATHBALIB/BAMTDEFA.f90.o | Testing/bamtdefa.mod: dyndep
+  restat = 1
+
+build Testing/CMakeFiles/MTFATESTS.dir/__/MATHBALIB/BAMTFASV.f90.o | Testing/bamtfasv.mod: dyndep
+  restat = 1
+

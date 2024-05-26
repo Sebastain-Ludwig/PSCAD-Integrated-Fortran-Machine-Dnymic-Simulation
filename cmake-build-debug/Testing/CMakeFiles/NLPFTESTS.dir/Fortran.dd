@@ -1,0 +1,21 @@
+ninja_dyndep_version = 1.0
+build Testing/CMakeFiles/NLPFTESTS.dir/NLPF_TEST.f90.o: dyndep | Testing/bamtdefa.mod Testing/bamtfasv.mod Testing/nlpfinit.mod Testing/nlpfjmsv.mod Testing/nlpfjmup.mod
+
+build Testing/CMakeFiles/NLPFTESTS.dir/__/MATHBALIB/BAMTDEFA.f90.o | Testing/bamtdefa.mod: dyndep
+  restat = 1
+
+build Testing/CMakeFiles/NLPFTESTS.dir/__/MATHBALIB/BAMTFASV.f90.o | Testing/bamtfasv.mod: dyndep
+  restat = 1
+
+build Testing/CMakeFiles/NLPFTESTS.dir/__/POWERFLOW/NFPFELUP.f90.o | Testing/nlpfelup.mod: dyndep
+  restat = 1
+
+build Testing/CMakeFiles/NLPFTESTS.dir/__/POWERFLOW/NLPFINIT.f90.o | Testing/nlpfinit.mod: dyndep
+  restat = 1
+
+build Testing/CMakeFiles/NLPFTESTS.dir/__/POWERFLOW/NLPFJMSV.f90.o | Testing/nlpfjmsv.mod: dyndep
+  restat = 1
+
+build Testing/CMakeFiles/NLPFTESTS.dir/__/POWERFLOW/NLPFJMUP.f90.o | Testing/nlpfjmup.mod: dyndep | Testing/nlpfelup.mod
+  restat = 1
+
