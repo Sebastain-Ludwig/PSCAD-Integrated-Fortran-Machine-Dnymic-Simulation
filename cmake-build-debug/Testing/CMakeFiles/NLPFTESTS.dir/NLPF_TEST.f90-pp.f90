@@ -15,7 +15,7 @@ program NLPF_TEST
         real,dimension(9)::BR_MAT(9),BX_MAT(9),P_SET(9),Q_SET(9),V_INIT(9),&
         T_INIT(9),PV(9),QV(9),DPV(9),DQV(9),DTHEV(9),DVV(9),TV(9),VV(9),XX(14),&
                 LM(14,14),UM(14,14)
-        real::G_MAT(9,9),B_MAT(9,9),JOCMAT(14,16)=0.,J_TEMP(14,14),BEQ_TEMP(14)
+        real::G_MAT(9,9),B_MAT(9,9),JOCMAT(16,16)=0.,J_TEMP(14,14),BEQ_TEMP(14)
         integer,dimension(9)::BUS_TYPE=(/3,2,2,1,1,1,1,1,1/)
         integer::ITERN
 
@@ -72,7 +72,10 @@ program NLPF_TEST
         LM=0.
         UM=0.
 !BEQ_TEMP=1.
-        J_TEMP(1:14,1:14)=JOCMAT(1:14,1:14)
+        J_TEMP(1:8,1:8)=JOCMAT(1:8,1:8)
+        J_TEMP(1:8,9:14)=JOCMAT(1:8,11:16)
+        J_TEMP(9:14,1:8)=JOCMAT(11:16,1:8)
+        J_TEMP(9:14,9:14)=JOCMAT(11:16,11:16)
 !call gesvx(J_TEMP,BEQ_TEMP,XX)
         call BAMTDOLU(J_TEMP,LM,UM)
         call BAMTDOSV(LM,UM,BEQ_TEMP,XX)
@@ -90,7 +93,23 @@ program NLPF_TEST
             call NLJOMTUP(PV, QV, TV,VV,G_MAT,B_MAT,9,2,JOCMAT)
             DPV=P_SET-PV
             DQV=Q_SET-QV
-            call NLJOSVUP(DPV(2:9),DQV(4:9),DTHEV(2:9),DVV(4:9),9,2,JOCMAT)
+!call NLJOSVUP(DPV(2:9),DQV(4:9),DTHEV(2:9),DVV(4:9),9,2,JOCMAT)
+            BEQ_TEMP(1:8)=DPV(2:9)
+            BEQ_TEMP(9:14)=DQV(4:9)
+            XX=0.
+            LM=0.
+            UM=0.
+!BEQ_TEMP=1.
+            J_TEMP(1:8,1:8)=JOCMAT(1:8,1:8)
+            J_TEMP(1:8,9:14)=JOCMAT(1:8,11:16)
+            J_TEMP(9:14,1:8)=JOCMAT(11:16,1:8)
+            J_TEMP(9:14,9:14)=JOCMAT(11:16,11:16)
+!call gesvx(J_TEMP,BEQ_TEMP,XX)
+            call BAMTDOLU(J_TEMP,LM,UM)
+            call BAMTDOSV(LM,UM,BEQ_TEMP,XX)
+            DTHEV(2:9)=XX(1:8)
+            DVV(4:9)=XX(9:14)
+
             call NLTVMTUP(DTHEV,TV)
             call NLVVMTUP(DVV,VV)
             write(*,*)DPV
