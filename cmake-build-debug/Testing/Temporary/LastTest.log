@@ -1,10 +1,10 @@
-Start testing: May 28 19:57 CST
+Start testing: May 28 19:59 CST
 ----------------------------------------------------------
 4/5 Testing: NLPFTESTS
 4/5 Test: NLPFTESTS
 Command: "/home/sebastian/Project/POWERSYSDYN/FORTRAN SCRIPTS/MACHINE-DYNAMIC-SIMULATION/cmake-build-debug/bin/NLPFTESTS"
 Directory: /home/sebastian/Project/POWERSYSDYN/FORTRAN SCRIPTS/MACHINE-DYNAMIC-SIMULATION/cmake-build-debug/Testing
-"NLPFTESTS" start time: May 28 19:57 CST
+"NLPFTESTS" start time: May 28 19:59 CST
 Output:
 ----------------------------------------------------------
  -1.2084452E-02   1.600492      0.8345718     -5.6598902E-02 -0.8390815    
@@ -568,8 +568,8 @@ Output:
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"NLPFTESTS" end time: May 28 19:57 CST
+"NLPFTESTS" end time: May 28 19:59 CST
 "NLPFTESTS" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: May 28 19:57 CST
+End testing: May 28 19:59 CST
