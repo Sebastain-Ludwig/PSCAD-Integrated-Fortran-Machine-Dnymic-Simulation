@@ -289,6 +289,9 @@ MKL_VERSION_H:FILEPATH=/opt/intel/oneapi/mkl/2024.0/include/mkl_version.h
 //Path to a library.
 OMP_LIBRARY:FILEPATH=/opt/intel/oneapi/compiler/2024.0/lib/libiomp5.so
 
+//Dependencies for the target
+POWERFLOW_LIB_DEPENDS:STATIC=general;MATHBALIB;
+
 //Path to a library.
 mkl_core_file:FILEPATH=/opt/intel/oneapi/mkl/2024.0/lib/libmkl_core.so
 

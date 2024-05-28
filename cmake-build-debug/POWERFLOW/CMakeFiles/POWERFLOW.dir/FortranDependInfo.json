@@ -12,7 +12,10 @@
 	"exports" : [],
 	"include-dirs" : [],
 	"language" : "Fortran",
-	"linked-target-dirs" : [],
+	"linked-target-dirs" : 
+	[
+		"/home/sebastian/Project/POWERSYSDYN/FORTRAN SCRIPTS/MACHINE-DYNAMIC-SIMULATION/cmake-build-debug/MATHBALIB/CMakeFiles/MATHBALIB.dir"
+	],
 	"module-dir" : "/home/sebastian/Project/POWERSYSDYN/FORTRAN SCRIPTS/MACHINE-DYNAMIC-SIMULATION/cmake-build-debug/POWERFLOW",
 	"submodule-ext" : ".smod",
 	"submodule-sep" : "@"

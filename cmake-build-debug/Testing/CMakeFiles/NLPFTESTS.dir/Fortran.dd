@@ -13,7 +13,7 @@ build Testing/CMakeFiles/NLPFTESTS.dir/__/POWERFLOW/NFPFELUP.f90.o | Testing/nlp
 build Testing/CMakeFiles/NLPFTESTS.dir/__/POWERFLOW/NLPFINIT.f90.o | Testing/nlpfinit.mod: dyndep
   restat = 1
 
-build Testing/CMakeFiles/NLPFTESTS.dir/__/POWERFLOW/NLPFJMSV.f90.o | Testing/nlpfjmsv.mod: dyndep
+build Testing/CMakeFiles/NLPFTESTS.dir/__/POWERFLOW/NLPFJMSV.f90.o | Testing/nlpfjmsv.mod: dyndep | Testing/bamtdefa.mod Testing/bamtfasv.mod
   restat = 1
 
 build Testing/CMakeFiles/NLPFTESTS.dir/__/POWERFLOW/NLPFJMUP.f90.o | Testing/nlpfjmup.mod: dyndep | Testing/nlpfelup.mod

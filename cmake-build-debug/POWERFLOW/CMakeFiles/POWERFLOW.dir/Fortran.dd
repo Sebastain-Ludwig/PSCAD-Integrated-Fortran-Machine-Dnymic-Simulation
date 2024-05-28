@@ -5,9 +5,15 @@ build POWERFLOW/CMakeFiles/POWERFLOW.dir/NFPFELUP.f90.o | POWERFLOW/nlpfelup.mod
 build POWERFLOW/CMakeFiles/POWERFLOW.dir/NLPFINIT.f90.o | POWERFLOW/nlpfinit.mod: dyndep
   restat = 1
 
-build POWERFLOW/CMakeFiles/POWERFLOW.dir/NLPFJMSV.f90.o | POWERFLOW/nlpfjmsv.mod: dyndep
+build POWERFLOW/CMakeFiles/POWERFLOW.dir/NLPFJMSV.f90.o | POWERFLOW/nlpfjmsv.mod: dyndep | POWERFLOW/bamtdefa.mod POWERFLOW/bamtfasv.mod
   restat = 1
 
 build POWERFLOW/CMakeFiles/POWERFLOW.dir/NLPFJMUP.f90.o | POWERFLOW/nlpfjmup.mod: dyndep | POWERFLOW/nlpfelup.mod
+  restat = 1
+
+build POWERFLOW/CMakeFiles/POWERFLOW.dir/__/MATHBALIB/BAMTDEFA.f90.o | POWERFLOW/bamtdefa.mod: dyndep
+  restat = 1
+
+build POWERFLOW/CMakeFiles/POWERFLOW.dir/__/MATHBALIB/BAMTFASV.f90.o | POWERFLOW/bamtfasv.mod: dyndep
   restat = 1
 

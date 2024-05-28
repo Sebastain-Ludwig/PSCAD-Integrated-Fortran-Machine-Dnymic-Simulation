@@ -19,10 +19,9 @@ target_sources(
         PUBLIC
         ${DIR_SRC_LIST}
 )
-#target_link_libraries(
-#        POWERFLOW
-#        PUBLIC
-#        MKL::MKL
-#        mkl_lapack95_ilp64
-#)
+target_link_libraries(
+        POWERFLOW
+        PUBLIC
+        MATHBALIB
+)
 #link_directories("${CMAKE_CURRENT_SOURCE_DIR}/MKLLIB")

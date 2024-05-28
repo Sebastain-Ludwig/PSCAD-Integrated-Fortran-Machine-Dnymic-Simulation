@@ -51,11 +51,7 @@ program NLPF_TEST
         call NLGBRXAD(G_MAT,B_MAT,8,2,BR_MAT(7),BX_MAT(7),0.0000)
         call NLGBRXAD(G_MAT,B_MAT,8,9,BR_MAT(8),BX_MAT(8),0.3060)
         call NLGBRXAD(G_MAT,B_MAT,9,4,BR_MAT(9),BX_MAT(9),0.1760)
-        !call NLBGGEAD(G_MAT,B_MAT,2,0.5)
-        !call NLBGGEAD(G_MAT,B_MAT,3,0.5)
-       ! call NLBGLDAD(G_MAT,B_MAT,5,0.5)
-       ! call NLBGLDAD(G_MAT,B_MAT,7,0.5)
-       ! call NLBGLDAD(G_MAT,B_MAT,9,0.5)
+
 
         call NLPVMTUP(T_INIT,V_INIT,G_MAT,B_MAT,9,PV)
         call NLQVMTUP(T_INIT,V_INIT,G_MAT,B_MAT,9,QV)
@@ -65,49 +61,21 @@ program NLPF_TEST
         TV=T_INIT
         VV=V_INIT
 
-        BEQ_TEMP(1:8)=DPV(2:9)
-        BEQ_TEMP(9:14)=DQV(4:9)
-        XX=0.
-        LM=0.
-        UM=0.
-        !BEQ_TEMP=1.
-        J_TEMP(1:8,1:8)=JOCMAT(1:8,1:8)
-        J_TEMP(1:8,9:14)=JOCMAT(1:8,11:16)
-        J_TEMP(9:14,1:8)=JOCMAT(11:16,1:8)
-        J_TEMP(9:14,9:14)=JOCMAT(11:16,11:16)
-        !call gesvx(J_TEMP,BEQ_TEMP,XX)
-        call BAMTDOLU(J_TEMP,LM,UM)
-        call BAMTDOSV(LM,UM,BEQ_TEMP,XX)
-        DTHEV(2:9)=XX(1:8)
-        DVV(4:9)=XX(9:14)
 
-        !call NLJOSVUP(DPV(2:9),DQV(4:9),DTHEV(2:9),DVV(4:9),9,2,JOCMAT)
+        call NLJOSVUP(DPV,DQV,DTHEV,DVV,9,2,JOCMAT)
 
         call NLTVMTUP(DTHEV,TV)
         call NLVVMTUP(DVV,VV)
 
-        do while(norm2(DPV(2:9))>=1e-2)
+        do while(norm2(DPV(2:9))>=1e-1)
             call NLPVMTUP(TV,VV,G_MAT,B_MAT,9,PV)
             call NLQVMTUP(TV,VV,G_MAT,B_MAT,9,QV)
             call NLJOMTUP(PV, QV, TV,VV,G_MAT,B_MAT,9,2,JOCMAT)
             DPV=P_SET-PV
             DQV=Q_SET-QV
-            !call NLJOSVUP(DPV(2:9),DQV(4:9),DTHEV(2:9),DVV(4:9),9,2,JOCMAT)
-            BEQ_TEMP(1:8)=DPV(2:9)
-            BEQ_TEMP(9:14)=DQV(4:9)
-            XX=0.
-            LM=0.
-            UM=0.
-            !BEQ_TEMP=1.
-            J_TEMP(1:8,1:8)=JOCMAT(1:8,1:8)
-            J_TEMP(1:8,9:14)=JOCMAT(1:8,11:16)
-            J_TEMP(9:14,1:8)=JOCMAT(11:16,1:8)
-            J_TEMP(9:14,9:14)=JOCMAT(11:16,11:16)
-            !call gesvx(J_TEMP,BEQ_TEMP,XX)
-            call BAMTDOLU(J_TEMP,LM,UM)
-            call BAMTDOSV(LM,UM,BEQ_TEMP,XX)
-            DTHEV(2:9)=XX(1:8)
-            DVV(4:9)=XX(9:14)
+            call NLJOSVUP(DPV(2:9),DQV(4:9),DTHEV(2:9),DVV(4:9),9,2,JOCMAT)
+
+            call NLJOSVUP(DPV,DQV,DTHEV,DVV,9,2,JOCMAT)
 
             call NLTVMTUP(DTHEV,TV)
             call NLVVMTUP(DVV,VV)

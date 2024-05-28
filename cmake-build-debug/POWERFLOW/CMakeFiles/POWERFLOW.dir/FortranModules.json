@@ -1,6 +1,16 @@
 {
 	"modules" : 
 	{
+		"bamtdefa.mod" : 
+		{
+			"bmi" : "/home/sebastian/Project/POWERSYSDYN/FORTRAN SCRIPTS/MACHINE-DYNAMIC-SIMULATION/cmake-build-debug/POWERFLOW/bamtdefa.mod",
+			"is-private" : false
+		},
+		"bamtfasv.mod" : 
+		{
+			"bmi" : "/home/sebastian/Project/POWERSYSDYN/FORTRAN SCRIPTS/MACHINE-DYNAMIC-SIMULATION/cmake-build-debug/POWERFLOW/bamtfasv.mod",
+			"is-private" : false
+		},
 		"nlpfelup.mod" : 
 		{
 			"bmi" : "/home/sebastian/Project/POWERSYSDYN/FORTRAN SCRIPTS/MACHINE-DYNAMIC-SIMULATION/cmake-build-debug/POWERFLOW/nlpfelup.mod",

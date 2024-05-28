@@ -213,9 +213,9 @@ build CMakeFiles/MADYNCAL.dir/Fortran.dd | /home/sebastian/Project/POWERSYSDYN/F
 #############################################
 # Link the executable bin/MADYNCAL
 
-build bin/MADYNCAL: Fortran_EXECUTABLE_LINKER__MADYNCAL_Debug CMakeFiles/MADYNCAL.dir/main.f90.o CMakeFiles/MADYNCAL.dir/MATHBALIB/BAMTDEFA.f90.o CMakeFiles/MADYNCAL.dir/MATHBALIB/BAMTFASV.f90.o CMakeFiles/MADYNCAL.dir/POWERFLOW/NFPFELUP.f90.o CMakeFiles/MADYNCAL.dir/POWERFLOW/NLPFINIT.f90.o CMakeFiles/MADYNCAL.dir/POWERFLOW/NLPFJMSV.f90.o CMakeFiles/MADYNCAL.dir/POWERFLOW/NLPFJMUP.f90.o CMakeFiles/MADYNCAL.dir/NETSOLVERS/BUSUP.f90.o CMakeFiles/MADYNCAL.dir/NETSOLVERS/COMPUP.f90.o CMakeFiles/MADYNCAL.dir/NETSOLVERS/LOADUP.f90.o CMakeFiles/MADYNCAL.dir/NETSOLVERS/SOLVENET.f90.o | lib/libMATHBALIB.a lib/libPOWERFLOW.a lib/libNETSOLVERS.a /opt/intel/oneapi/mkl/2024.0/lib/libmkl_intel_ilp64.so /opt/intel/oneapi/mkl/2024.0/lib/libmkl_intel_thread.so /opt/intel/oneapi/mkl/2024.0/lib/libmkl_core.so /opt/intel/oneapi/compiler/2024.0/lib/libiomp5.so || lib/libMATHBALIB.a lib/libNETSOLVERS.a lib/libPOWERFLOW.a
+build bin/MADYNCAL: Fortran_EXECUTABLE_LINKER__MADYNCAL_Debug CMakeFiles/MADYNCAL.dir/main.f90.o CMakeFiles/MADYNCAL.dir/MATHBALIB/BAMTDEFA.f90.o CMakeFiles/MADYNCAL.dir/MATHBALIB/BAMTFASV.f90.o CMakeFiles/MADYNCAL.dir/POWERFLOW/NFPFELUP.f90.o CMakeFiles/MADYNCAL.dir/POWERFLOW/NLPFINIT.f90.o CMakeFiles/MADYNCAL.dir/POWERFLOW/NLPFJMSV.f90.o CMakeFiles/MADYNCAL.dir/POWERFLOW/NLPFJMUP.f90.o CMakeFiles/MADYNCAL.dir/NETSOLVERS/BUSUP.f90.o CMakeFiles/MADYNCAL.dir/NETSOLVERS/COMPUP.f90.o CMakeFiles/MADYNCAL.dir/NETSOLVERS/LOADUP.f90.o CMakeFiles/MADYNCAL.dir/NETSOLVERS/SOLVENET.f90.o | lib/libMATHBALIB.a lib/libPOWERFLOW.a lib/libNETSOLVERS.a lib/libMATHBALIB.a /opt/intel/oneapi/mkl/2024.0/lib/libmkl_intel_ilp64.so /opt/intel/oneapi/mkl/2024.0/lib/libmkl_intel_thread.so /opt/intel/oneapi/mkl/2024.0/lib/libmkl_core.so /opt/intel/oneapi/compiler/2024.0/lib/libiomp5.so || lib/libMATHBALIB.a lib/libNETSOLVERS.a lib/libPOWERFLOW.a
   FLAGS = -g
-  LINK_LIBRARIES = lib/libMATHBALIB.a  lib/libPOWERFLOW.a  lib/libNETSOLVERS.a  -lmkl_lapack95_ilp64  -Wl,-rpath=/opt/intel/oneapi/mkl/2024.0/lib  /opt/intel/oneapi/mkl/2024.0/lib/libmkl_intel_ilp64.so  /opt/intel/oneapi/mkl/2024.0/lib/libmkl_intel_thread.so  /opt/intel/oneapi/mkl/2024.0/lib/libmkl_core.so  /opt/intel/oneapi/compiler/2024.0/lib/libiomp5.so  -lm  -ldl  -lpthread
+  LINK_LIBRARIES = lib/libMATHBALIB.a  lib/libPOWERFLOW.a  lib/libNETSOLVERS.a  -lmkl_lapack95_ilp64  lib/libMATHBALIB.a  -Wl,-rpath=/opt/intel/oneapi/mkl/2024.0/lib  /opt/intel/oneapi/mkl/2024.0/lib/libmkl_intel_ilp64.so  /opt/intel/oneapi/mkl/2024.0/lib/libmkl_intel_thread.so  /opt/intel/oneapi/mkl/2024.0/lib/libmkl_core.so  /opt/intel/oneapi/compiler/2024.0/lib/libiomp5.so  -lm  -ldl  -lpthread
   OBJECT_DIR = CMakeFiles/MADYNCAL.dir
   POST_BUILD = :
   PRE_LINK = :
@@ -535,7 +535,33 @@ build POWERFLOW/CMakeFiles/POWERFLOW.dir/NLPFJMUP.f90.o: Fortran_COMPILER__POWER
   OBJECT_FILE_DIR = POWERFLOW/CMakeFiles/POWERFLOW.dir
   dyndep = POWERFLOW/CMakeFiles/POWERFLOW.dir/Fortran.dd
 
-build POWERFLOW/CMakeFiles/POWERFLOW.dir/Fortran.dd | /home/sebastian/Project/POWERSYSDYN/FORTRAN$ SCRIPTS/MACHINE-DYNAMIC-SIMULATION/cmake-build-debug/POWERFLOW/CMakeFiles/POWERFLOW.dir/FortranModules.json: Fortran_DYNDEP__POWERFLOW_Debug POWERFLOW/CMakeFiles/POWERFLOW.dir/NFPFELUP.f90.o.ddi POWERFLOW/CMakeFiles/POWERFLOW.dir/NLPFINIT.f90.o.ddi POWERFLOW/CMakeFiles/POWERFLOW.dir/NLPFJMSV.f90.o.ddi POWERFLOW/CMakeFiles/POWERFLOW.dir/NLPFJMUP.f90.o.ddi
+build POWERFLOW/CMakeFiles/POWERFLOW.dir/__/MATHBALIB/BAMTDEFA.f90-pp.f90 | POWERFLOW/CMakeFiles/POWERFLOW.dir/__/MATHBALIB/BAMTDEFA.f90.o.ddi: Fortran_PREPROCESS_SCAN__POWERFLOW_Debug /home/sebastian/Project/POWERSYSDYN/FORTRAN$ SCRIPTS/MACHINE-DYNAMIC-SIMULATION/MATHBALIB/BAMTDEFA.f90 || cmake_object_order_depends_target_POWERFLOW
+  DEP_FILE = POWERFLOW/CMakeFiles/POWERFLOW.dir/__/MATHBALIB/BAMTDEFA.f90-pp.f90.d
+  DYNDEP_INTERMEDIATE_FILE = POWERFLOW/CMakeFiles/POWERFLOW.dir/__/MATHBALIB/BAMTDEFA.f90.o.ddi
+  FLAGS = -g -module POWERFLOW
+  OBJ_FILE = POWERFLOW/CMakeFiles/POWERFLOW.dir/__/MATHBALIB/BAMTDEFA.f90.o
+
+build POWERFLOW/CMakeFiles/POWERFLOW.dir/__/MATHBALIB/BAMTDEFA.f90.o: Fortran_COMPILER__POWERFLOW_scanned_Debug POWERFLOW/CMakeFiles/POWERFLOW.dir/__/MATHBALIB/BAMTDEFA.f90-pp.f90 || POWERFLOW/CMakeFiles/POWERFLOW.dir/Fortran.dd
+  FLAGS = -g -module POWERFLOW
+  INCLUDES = -I"/home/sebastian/Project/POWERSYSDYN/FORTRAN SCRIPTS/MACHINE-DYNAMIC-SIMULATION/MATHBALIB"
+  OBJECT_DIR = POWERFLOW/CMakeFiles/POWERFLOW.dir
+  OBJECT_FILE_DIR = POWERFLOW/CMakeFiles/POWERFLOW.dir/__/MATHBALIB
+  dyndep = POWERFLOW/CMakeFiles/POWERFLOW.dir/Fortran.dd
+
+build POWERFLOW/CMakeFiles/POWERFLOW.dir/__/MATHBALIB/BAMTFASV.f90-pp.f90 | POWERFLOW/CMakeFiles/POWERFLOW.dir/__/MATHBALIB/BAMTFASV.f90.o.ddi: Fortran_PREPROCESS_SCAN__POWERFLOW_Debug /home/sebastian/Project/POWERSYSDYN/FORTRAN$ SCRIPTS/MACHINE-DYNAMIC-SIMULATION/MATHBALIB/BAMTFASV.f90 || cmake_object_order_depends_target_POWERFLOW
+  DEP_FILE = POWERFLOW/CMakeFiles/POWERFLOW.dir/__/MATHBALIB/BAMTFASV.f90-pp.f90.d
+  DYNDEP_INTERMEDIATE_FILE = POWERFLOW/CMakeFiles/POWERFLOW.dir/__/MATHBALIB/BAMTFASV.f90.o.ddi
+  FLAGS = -g -module POWERFLOW
+  OBJ_FILE = POWERFLOW/CMakeFiles/POWERFLOW.dir/__/MATHBALIB/BAMTFASV.f90.o
+
+build POWERFLOW/CMakeFiles/POWERFLOW.dir/__/MATHBALIB/BAMTFASV.f90.o: Fortran_COMPILER__POWERFLOW_scanned_Debug POWERFLOW/CMakeFiles/POWERFLOW.dir/__/MATHBALIB/BAMTFASV.f90-pp.f90 || POWERFLOW/CMakeFiles/POWERFLOW.dir/Fortran.dd
+  FLAGS = -g -module POWERFLOW
+  INCLUDES = -I"/home/sebastian/Project/POWERSYSDYN/FORTRAN SCRIPTS/MACHINE-DYNAMIC-SIMULATION/MATHBALIB"
+  OBJECT_DIR = POWERFLOW/CMakeFiles/POWERFLOW.dir
+  OBJECT_FILE_DIR = POWERFLOW/CMakeFiles/POWERFLOW.dir/__/MATHBALIB
+  dyndep = POWERFLOW/CMakeFiles/POWERFLOW.dir/Fortran.dd
+
+build POWERFLOW/CMakeFiles/POWERFLOW.dir/Fortran.dd | /home/sebastian/Project/POWERSYSDYN/FORTRAN$ SCRIPTS/MACHINE-DYNAMIC-SIMULATION/cmake-build-debug/POWERFLOW/CMakeFiles/POWERFLOW.dir/FortranModules.json: Fortran_DYNDEP__POWERFLOW_Debug POWERFLOW/CMakeFiles/POWERFLOW.dir/NFPFELUP.f90.o.ddi POWERFLOW/CMakeFiles/POWERFLOW.dir/NLPFINIT.f90.o.ddi POWERFLOW/CMakeFiles/POWERFLOW.dir/NLPFJMSV.f90.o.ddi POWERFLOW/CMakeFiles/POWERFLOW.dir/NLPFJMUP.f90.o.ddi POWERFLOW/CMakeFiles/POWERFLOW.dir/__/MATHBALIB/BAMTDEFA.f90.o.ddi POWERFLOW/CMakeFiles/POWERFLOW.dir/__/MATHBALIB/BAMTFASV.f90.o.ddi | /home/sebastian/Project/POWERSYSDYN/FORTRAN$ SCRIPTS/MACHINE-DYNAMIC-SIMULATION/cmake-build-debug/MATHBALIB/CMakeFiles/MATHBALIB.dir/FortranModules.json
 
 
 # =============================================================================
@@ -545,7 +571,7 @@ build POWERFLOW/CMakeFiles/POWERFLOW.dir/Fortran.dd | /home/sebastian/Project/PO
 #############################################
 # Link the static library lib/libPOWERFLOW.a
 
-build lib/libPOWERFLOW.a: Fortran_STATIC_LIBRARY_LINKER__POWERFLOW_Debug POWERFLOW/CMakeFiles/POWERFLOW.dir/NFPFELUP.f90.o POWERFLOW/CMakeFiles/POWERFLOW.dir/NLPFINIT.f90.o POWERFLOW/CMakeFiles/POWERFLOW.dir/NLPFJMSV.f90.o POWERFLOW/CMakeFiles/POWERFLOW.dir/NLPFJMUP.f90.o || lib/libMATHBALIB.a lib/libNETSOLVERS.a
+build lib/libPOWERFLOW.a: Fortran_STATIC_LIBRARY_LINKER__POWERFLOW_Debug POWERFLOW/CMakeFiles/POWERFLOW.dir/NFPFELUP.f90.o POWERFLOW/CMakeFiles/POWERFLOW.dir/NLPFINIT.f90.o POWERFLOW/CMakeFiles/POWERFLOW.dir/NLPFJMSV.f90.o POWERFLOW/CMakeFiles/POWERFLOW.dir/NLPFJMUP.f90.o POWERFLOW/CMakeFiles/POWERFLOW.dir/__/MATHBALIB/BAMTDEFA.f90.o POWERFLOW/CMakeFiles/POWERFLOW.dir/__/MATHBALIB/BAMTFASV.f90.o || lib/libMATHBALIB.a lib/libNETSOLVERS.a
   LANGUAGE_COMPILE_FLAGS = -g
   OBJECT_DIR = POWERFLOW/CMakeFiles/POWERFLOW.dir
   POST_BUILD = :
@@ -1004,9 +1030,9 @@ build Testing/CMakeFiles/NLPFTESTS.dir/Fortran.dd | /home/sebastian/Project/POWE
 #############################################
 # Link the executable bin/NLPFTESTS
 
-build bin/NLPFTESTS: Fortran_EXECUTABLE_LINKER__NLPFTESTS_Debug Testing/CMakeFiles/NLPFTESTS.dir/NLPF_TEST.f90.o Testing/CMakeFiles/NLPFTESTS.dir/__/MATHBALIB/BAMTDEFA.f90.o Testing/CMakeFiles/NLPFTESTS.dir/__/MATHBALIB/BAMTFASV.f90.o Testing/CMakeFiles/NLPFTESTS.dir/__/POWERFLOW/NFPFELUP.f90.o Testing/CMakeFiles/NLPFTESTS.dir/__/POWERFLOW/NLPFINIT.f90.o Testing/CMakeFiles/NLPFTESTS.dir/__/POWERFLOW/NLPFJMSV.f90.o Testing/CMakeFiles/NLPFTESTS.dir/__/POWERFLOW/NLPFJMUP.f90.o | lib/libMATHBALIB.a lib/libPOWERFLOW.a /opt/intel/oneapi/mkl/2024.0/lib/libmkl_intel_ilp64.so /opt/intel/oneapi/mkl/2024.0/lib/libmkl_intel_thread.so /opt/intel/oneapi/mkl/2024.0/lib/libmkl_core.so /opt/intel/oneapi/compiler/2024.0/lib/libiomp5.so || lib/libMATHBALIB.a lib/libPOWERFLOW.a
+build bin/NLPFTESTS: Fortran_EXECUTABLE_LINKER__NLPFTESTS_Debug Testing/CMakeFiles/NLPFTESTS.dir/NLPF_TEST.f90.o Testing/CMakeFiles/NLPFTESTS.dir/__/MATHBALIB/BAMTDEFA.f90.o Testing/CMakeFiles/NLPFTESTS.dir/__/MATHBALIB/BAMTFASV.f90.o Testing/CMakeFiles/NLPFTESTS.dir/__/POWERFLOW/NFPFELUP.f90.o Testing/CMakeFiles/NLPFTESTS.dir/__/POWERFLOW/NLPFINIT.f90.o Testing/CMakeFiles/NLPFTESTS.dir/__/POWERFLOW/NLPFJMSV.f90.o Testing/CMakeFiles/NLPFTESTS.dir/__/POWERFLOW/NLPFJMUP.f90.o | lib/libMATHBALIB.a lib/libPOWERFLOW.a lib/libMATHBALIB.a /opt/intel/oneapi/mkl/2024.0/lib/libmkl_intel_ilp64.so /opt/intel/oneapi/mkl/2024.0/lib/libmkl_intel_thread.so /opt/intel/oneapi/mkl/2024.0/lib/libmkl_core.so /opt/intel/oneapi/compiler/2024.0/lib/libiomp5.so || lib/libMATHBALIB.a lib/libPOWERFLOW.a
   FLAGS = -g
-  LINK_LIBRARIES = lib/libMATHBALIB.a  lib/libPOWERFLOW.a  -lmkl_lapack95_ilp64  -Wl,-rpath=/opt/intel/oneapi/mkl/2024.0/lib  /opt/intel/oneapi/mkl/2024.0/lib/libmkl_intel_ilp64.so  /opt/intel/oneapi/mkl/2024.0/lib/libmkl_intel_thread.so  /opt/intel/oneapi/mkl/2024.0/lib/libmkl_core.so  /opt/intel/oneapi/compiler/2024.0/lib/libiomp5.so  -lm  -ldl  -lpthread
+  LINK_LIBRARIES = lib/libMATHBALIB.a  lib/libPOWERFLOW.a  -lmkl_lapack95_ilp64  lib/libMATHBALIB.a  -Wl,-rpath=/opt/intel/oneapi/mkl/2024.0/lib  /opt/intel/oneapi/mkl/2024.0/lib/libmkl_intel_ilp64.so  /opt/intel/oneapi/mkl/2024.0/lib/libmkl_intel_thread.so  /opt/intel/oneapi/mkl/2024.0/lib/libmkl_core.so  /opt/intel/oneapi/compiler/2024.0/lib/libiomp5.so  -lm  -ldl  -lpthread
   OBJECT_DIR = Testing/CMakeFiles/NLPFTESTS.dir
   POST_BUILD = :
   PRE_LINK = :

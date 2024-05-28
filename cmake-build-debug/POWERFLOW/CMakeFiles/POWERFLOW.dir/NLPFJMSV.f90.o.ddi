@@ -16,6 +16,12 @@
 			"requires" : 
 			[
 				{
+					"logical-name" : "bamtdefa.mod"
+				},
+				{
+					"logical-name" : "bamtfasv.mod"
+				},
+				{
 					"logical-name" : "iso_fortran_env.mod"
 				}
 			]
