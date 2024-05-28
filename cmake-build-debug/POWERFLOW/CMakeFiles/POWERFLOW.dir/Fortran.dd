@@ -11,6 +11,15 @@ build POWERFLOW/CMakeFiles/POWERFLOW.dir/NLPFJMSV.f90.o | POWERFLOW/nlpfjmsv.mod
 build POWERFLOW/CMakeFiles/POWERFLOW.dir/NLPFJMUP.f90.o | POWERFLOW/nlpfjmup.mod: dyndep | POWERFLOW/nlpfelup.mod
   restat = 1
 
+build POWERFLOW/CMakeFiles/POWERFLOW.dir/PQPFELUP.f90.o | POWERFLOW/pqpfelup.mod: dyndep
+  restat = 1
+
+build POWERFLOW/CMakeFiles/POWERFLOW.dir/PQPFJMSV.f90.o | POWERFLOW/pqpfjmsv.mod: dyndep | POWERFLOW/bamtdefa.mod POWERFLOW/bamtfasv.mod
+  restat = 1
+
+build POWERFLOW/CMakeFiles/POWERFLOW.dir/PQPFJMUP.f90.o | POWERFLOW/pqpfjmup.mod: dyndep | POWERFLOW/pqpfelup.mod
+  restat = 1
+
 build POWERFLOW/CMakeFiles/POWERFLOW.dir/__/MATHBALIB/BAMTDEFA.f90.o | POWERFLOW/bamtdefa.mod: dyndep
   restat = 1
 

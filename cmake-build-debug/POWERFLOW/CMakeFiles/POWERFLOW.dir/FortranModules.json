@@ -30,6 +30,21 @@
 		{
 			"bmi" : "/home/sebastian/Project/POWERSYSDYN/FORTRAN SCRIPTS/MACHINE-DYNAMIC-SIMULATION/cmake-build-debug/POWERFLOW/nlpfjmup.mod",
 			"is-private" : false
+		},
+		"pqpfelup.mod" : 
+		{
+			"bmi" : "/home/sebastian/Project/POWERSYSDYN/FORTRAN SCRIPTS/MACHINE-DYNAMIC-SIMULATION/cmake-build-debug/POWERFLOW/pqpfelup.mod",
+			"is-private" : false
+		},
+		"pqpfjmsv.mod" : 
+		{
+			"bmi" : "/home/sebastian/Project/POWERSYSDYN/FORTRAN SCRIPTS/MACHINE-DYNAMIC-SIMULATION/cmake-build-debug/POWERFLOW/pqpfjmsv.mod",
+			"is-private" : false
+		},
+		"pqpfjmup.mod" : 
+		{
+			"bmi" : "/home/sebastian/Project/POWERSYSDYN/FORTRAN SCRIPTS/MACHINE-DYNAMIC-SIMULATION/cmake-build-debug/POWERFLOW/pqpfjmup.mod",
+			"is-private" : false
 		}
 	},
 	"references" : {},

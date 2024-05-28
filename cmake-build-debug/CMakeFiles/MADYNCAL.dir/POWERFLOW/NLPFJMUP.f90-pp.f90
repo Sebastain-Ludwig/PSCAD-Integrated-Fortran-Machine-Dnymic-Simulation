@@ -31,7 +31,7 @@ module NLPFJMUP
                     call NLNMELUP(VV(i),VV(j),GMAT(i, j),BMAT(i, j),TV(i)-TV(j),JOCMAT(i-1, BUSN-1+j-1))
                 else
                     call NLHDELUP(VV(i),BMAT(i, i),QV(i),JOCMAT(i-1, j-1))
-                    call NLNDELUP(VV(i),BMAT(i, i),PV(i),JOCMAT(i-1,BUSN-1+j-1))
+                    call NLNDELUP(VV(i),GMAT(i, i),PV(i),JOCMAT(i-1,BUSN-1+j-1))
                 end if
                 j=j+1
             end do
@@ -40,15 +40,15 @@ module NLPFJMUP
         i=2
         j=2
 
-        do while(i<=BUSN-PVN-1)
+        do while(i<=BUSN)
             j=2
-            do while(j<=BUSN-1)
+            do while(j<=BUSN)
                 if (i/=j)then
                     call NLJMELUP(VV(i),VV(j),GMAT(i, j),BMAT(i, j),TV(i)-TV(j),JOCMAT(BUSN-1+i-1, j-1))
                     call NLLMELUP(VV(i),VV(j),GMAT(i, j),BMAT(i, j),TV(i)-TV(j),JOCMAT(BUSN-1+i-1, BUSN-1+j-1))
                 else
-                    call NLJDELUP(VV(i),BMAT(i, i),QV(i),JOCMAT(BUSN-1+i-1, j-1))
-                    call NLLDELUP(VV(i),BMAT(i, i),PV(i),JOCMAT(BUSN-1+i-1, BUSN-1+j-1))
+                    call NLJDELUP(VV(i),GMAT(i, i),PV(i),JOCMAT(BUSN-1+i-1, j-1))
+                    call NLLDELUP(VV(i),BMAT(i, i),QV(i),JOCMAT(BUSN-1+i-1, BUSN-1+j-1))
                 end if
                 j=j+1
             end do

@@ -497,6 +497,59 @@ rule Fortran_EXECUTABLE_LINKER__MTFATESTS_Debug
 
 
 #############################################
+# Rule for generating Fortran dependencies.
+
+rule Fortran_PREPROCESS_SCAN__PQPFTESTS_Debug
+  depfile = $DEP_FILE
+  command = /opt/intel/oneapi/compiler/2024.0/bin/ifx -fpp $DEFINES $INCLUDES $FLAGS -P $in -o $out && /home/sebastian/Project/IDE/Clion/CLion-2023.3.4/clion-2023.3.4/bin/cmake/linux/x64/bin/cmake -E cmake_ninja_depends --tdi=Testing/CMakeFiles/PQPFTESTS.dir/FortranDependInfo.json --lang=Fortran --src=$out --out=$out --dep=$DEP_FILE --obj=$OBJ_FILE --ddi=$DYNDEP_INTERMEDIATE_FILE
+  description = Building Fortran preprocessed $out
+
+
+#############################################
+# Rule for generating Fortran dependencies on non-preprocessed files.
+
+rule Fortran_SCAN__PQPFTESTS_Debug
+  depfile = $DEP_FILE
+  command = /home/sebastian/Project/IDE/Clion/CLion-2023.3.4/clion-2023.3.4/bin/cmake/linux/x64/bin/cmake -E cmake_ninja_depends --tdi=Testing/CMakeFiles/PQPFTESTS.dir/FortranDependInfo.json --lang=Fortran --src=$in --out=$out --dep=$DEP_FILE --obj=$OBJ_FILE --ddi=$out
+  description = Generating Fortran dependencies for $in
+
+
+#############################################
+# Rule to generate ninja dyndep files for Fortran.
+
+rule Fortran_DYNDEP__PQPFTESTS_Debug
+  command = /home/sebastian/Project/IDE/Clion/CLion-2023.3.4/clion-2023.3.4/bin/cmake/linux/x64/bin/cmake -E cmake_ninja_dyndep --tdi=Testing/CMakeFiles/PQPFTESTS.dir/FortranDependInfo.json --lang=Fortran --dd=$out @$out.rsp
+  description = Generating Fortran dyndep file $out
+  rspfile = $out.rsp
+  rspfile_content = $in
+
+
+#############################################
+# Rule for compiling Fortran files.
+
+rule Fortran_COMPILER__PQPFTESTS_scanned_Debug
+  command = ${LAUNCHER}${CODE_CHECK}/opt/intel/oneapi/compiler/2024.0/bin/ifx $DEFINES $INCLUDES $FLAGS -c $in -o $out
+  description = Building Fortran object $out
+
+
+#############################################
+# Rule for compiling Fortran files.
+
+rule Fortran_COMPILER__PQPFTESTS_unscanned_Debug
+  command = ${LAUNCHER}${CODE_CHECK}/opt/intel/oneapi/compiler/2024.0/bin/ifx $DEFINES $INCLUDES $FLAGS -c $in -o $out
+  description = Building Fortran object $out
+
+
+#############################################
+# Rule for linking Fortran executable.
+
+rule Fortran_EXECUTABLE_LINKER__PQPFTESTS_Debug
+  command = $PRE_LINK && /opt/intel/oneapi/compiler/2024.0/bin/ifx $LINK_FLAGS $FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
+  description = Linking Fortran executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE

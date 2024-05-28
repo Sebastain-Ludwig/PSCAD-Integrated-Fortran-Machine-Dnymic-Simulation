@@ -14,7 +14,7 @@ program NLPF_TEST
         real,dimension(9)::BR_MAT(9),BX_MAT(9),P_SET(9),Q_SET(9),V_INIT(9),&
         T_INIT(9),PV(9),QV(9),DPV(9),DQV(9),DTHEV(9),DVV(9),TV(9),VV(9),XX(14),&
                 LM(14,14),UM(14,14)
-        real::G_MAT(9,9),B_MAT(9,9),JOCMAT(16,16)=0.,J_TEMP(14,14),BEQ_TEMP(14)
+        real::G_MAT(9,9),B_MAT(9,9),JOCMAT(16,16)=0.,J_TEMP(14,14),BEQ_TEMP(14),TIME_COM
         integer,dimension(9)::BUS_TYPE=(/3,2,2,1,1,1,1,1,1/)
         integer::ITERN
 
@@ -73,7 +73,7 @@ program NLPF_TEST
             call NLJOMTUP(PV, QV, TV,VV,G_MAT,B_MAT,9,2,JOCMAT)
             DPV=P_SET-PV
             DQV=Q_SET-QV
-            call NLJOSVUP(DPV(2:9),DQV(4:9),DTHEV(2:9),DVV(4:9),9,2,JOCMAT)
+            !call NLJOSVUP(DPV(2:9),DQV(4:9),DTHEV(2:9),DVV(4:9),9,2,JOCMAT)
 
             call NLJOSVUP(DPV,DQV,DTHEV,DVV,9,2,JOCMAT)
 
@@ -84,4 +84,7 @@ program NLPF_TEST
             write(*, *)ITERN
         end do
         write(*,*)VV
+        call cpu_time(TIME_COM)
+        write(*,*)TIME_COM
 end program NLPF_TEST
+!N-L V-T

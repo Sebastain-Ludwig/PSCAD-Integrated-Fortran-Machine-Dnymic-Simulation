@@ -19,6 +19,7 @@
 /home/sebastian/Project/POWERSYSDYN/FORTRAN SCRIPTS/MACHINE-DYNAMIC-SIMULATION/cmake-build-debug/Testing/CMakeFiles/YTESTS.dir
 /home/sebastian/Project/POWERSYSDYN/FORTRAN SCRIPTS/MACHINE-DYNAMIC-SIMULATION/cmake-build-debug/Testing/CMakeFiles/NLPFTESTS.dir
 /home/sebastian/Project/POWERSYSDYN/FORTRAN SCRIPTS/MACHINE-DYNAMIC-SIMULATION/cmake-build-debug/Testing/CMakeFiles/MTFATESTS.dir
+/home/sebastian/Project/POWERSYSDYN/FORTRAN SCRIPTS/MACHINE-DYNAMIC-SIMULATION/cmake-build-debug/Testing/CMakeFiles/PQPFTESTS.dir
 /home/sebastian/Project/POWERSYSDYN/FORTRAN SCRIPTS/MACHINE-DYNAMIC-SIMULATION/cmake-build-debug/Testing/CMakeFiles/test.dir
 /home/sebastian/Project/POWERSYSDYN/FORTRAN SCRIPTS/MACHINE-DYNAMIC-SIMULATION/cmake-build-debug/Testing/CMakeFiles/edit_cache.dir
 /home/sebastian/Project/POWERSYSDYN/FORTRAN SCRIPTS/MACHINE-DYNAMIC-SIMULATION/cmake-build-debug/Testing/CMakeFiles/rebuild_cache.dir

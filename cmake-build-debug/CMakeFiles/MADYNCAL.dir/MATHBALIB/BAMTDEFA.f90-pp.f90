@@ -39,6 +39,7 @@ module BAMTDEFA
                 if (abs(U(i, i))>=1e-5)then
                     L(j,i)=(MAT(j,i)-sum(L(j,1:i-1)*U(1:i-1,i)))/U(i,i)
                 else
+                    write(*,*)i
                     stop 'LOW LEVEL MATH ERROR:LU U DIAG ELEMENT U(i,i) NEAR SINGULAR!'
                 end if
             end do

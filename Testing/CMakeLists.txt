@@ -3,6 +3,7 @@ add_executable(BUSTESTS BUS_TEST.f90)
 add_executable(YTESTS Y_TEST.f90)
 add_executable(NLPFTESTS NLPF_TEST.f90)
 add_executable(MTFATESTS MTFA_TEST.f90)
+add_executable(PQPFTESTS PQPF_TEST.f90)
 
 set(CMAKE_BUILD_TYPE Debug)
 
@@ -51,6 +52,13 @@ target_link_libraries(
         MATHBALIB
 )
 
+target_link_libraries(
+        PQPFTESTS
+        PUBLIC
+        MATHBALIB
+        POWERFLOW
+)
+
 add_test(
         NAME
         GENTESTS
@@ -82,4 +90,11 @@ add_test(
         MTFATESTS
         COMMAND
         $<TARGET_FILE:MTFATESTS>
+)
+
+add_test(
+        NAME
+        PQPFTESTS
+        COMMAND
+        $<TARGET_FILE:PQPFTESTS>
 )

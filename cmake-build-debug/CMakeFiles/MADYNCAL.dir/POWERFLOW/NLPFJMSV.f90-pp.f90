@@ -5,6 +5,8 @@ module NLPFJMSV
             stderr=>error_unit
 !use f95_precision,only:WP=>SP
 !use lapack95,only:GETRF,gesv
+    use BAMTFASV
+    use BAMTDEFA
     implicit none
 
 contains
@@ -13,35 +15,29 @@ contains
         integer,intent(in)::BUSN,PVN
         real,intent(inout)::DTHEV(:),DVV(:)
 
-        real::JOCMAT_TEMP(2*BUSN-PVN-2,2*BUSN-PVN-2),EQB_TEMP(2*BUSN-PVN-2)
+        real::JOCMAT_TEMP(2*BUSN-PVN-2,2*BUSN-PVN-2),EQB_TEMP(2*BUSN-PVN-2),XX(2*BUSN-PVN+2),&
+                LM(2*BUSN-PVN+2,2*BUSN-PVN+2),UM(2*BUSN-PVN+2,2*BUSN-PVN+2)
         integer::i=1
 
         JOCMAT_TEMP=0.
-        EQB_TEMP=0.
-        JOCMAT_TEMP=JOCMAT(1:2*BUSN-PVN+1,1:2*BUSN-PVN+1)
+        EQB_TEMP=1.
 
-        do while(i<=BUSN-1)
-            EQB_TEMP(i)=DPV(i)
-            i=i+1
-        end do
-        i=1
-        do while(i<=BUSN-PVN-1)
-            EQB_TEMP(BUSN-1+i)=DQV(i)
-            i=i+1
-        end do
+        JOCMAT_TEMP(1:BUSN-1,1:BUSN-1)=JOCMAT(1:BUSN-1,1:BUSN-1)
+        JOCMAT_TEMP(1:BUSN-1,BUSN:2*BUSN-PVN-2)=JOCMAT(1:BUSN-1,BUSN+PVN:2*BUSN)
+        JOCMAT_TEMP(BUSN:2*BUSN-PVN-2,1:BUSN-1)=JOCMAT(BUSN+PVN:2*BUSN,1:BUSN-1)
+        JOCMAT_TEMP(BUSN:2*BUSN-PVN-2,BUSN:2*BUSN-PVN-2)=JOCMAT(BUSN+PVN:2*BUSN,BUSN+PVN:2*BUSN)
 
-!call gesv(JOCMAT_TEMP,EQB_TEMP)
+        EQB_TEMP(1:BUSN-1)=DPV(2:BUSN)
+        EQB_TEMP(BUSN:2*BUSN-PVN+1)=DQV(2+PVN:BUSN)
 
-        i=1
-        do while(i<=BUSN-1)
-            DTHEV(i)=EQB_TEMP(i)
-            i=i+1
-        end do
-        i=1
-        do while(i<=BUSN-PVN-1)
-            DVV(i)=EQB_TEMP(BUSN-1+i)
-            i=i+1
-        end do
+        XX=0.
+        LM=0.
+        UM=0.
+
+        call BAMTDOLU(JOCMAT_TEMP,LM,UM)
+        call BAMTDOSV(LM,UM,EQB_TEMP,XX)
+        DTHEV(2:BUSN)=XX(1:BUSN-1)
+        DVV(2+PVN:BUSN)=XX(BUSN:2*BUSN-PVN-2)
 
     end subroutine NLJOSVUP
 end module NLPFJMSV

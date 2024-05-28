@@ -13,10 +13,19 @@ build CMakeFiles/MADYNCAL.dir/POWERFLOW/NFPFELUP.f90.o | nlpfelup.mod: dyndep
 build CMakeFiles/MADYNCAL.dir/POWERFLOW/NLPFINIT.f90.o | nlpfinit.mod: dyndep
   restat = 1
 
-build CMakeFiles/MADYNCAL.dir/POWERFLOW/NLPFJMSV.f90.o | nlpfjmsv.mod: dyndep
+build CMakeFiles/MADYNCAL.dir/POWERFLOW/NLPFJMSV.f90.o | nlpfjmsv.mod: dyndep | bamtdefa.mod bamtfasv.mod
   restat = 1
 
 build CMakeFiles/MADYNCAL.dir/POWERFLOW/NLPFJMUP.f90.o | nlpfjmup.mod: dyndep | nlpfelup.mod
+  restat = 1
+
+build CMakeFiles/MADYNCAL.dir/POWERFLOW/PQPFELUP.f90.o | pqpfelup.mod: dyndep
+  restat = 1
+
+build CMakeFiles/MADYNCAL.dir/POWERFLOW/PQPFJMSV.f90.o | pqpfjmsv.mod: dyndep | bamtdefa.mod bamtfasv.mod
+  restat = 1
+
+build CMakeFiles/MADYNCAL.dir/POWERFLOW/PQPFJMUP.f90.o | pqpfjmup.mod: dyndep | pqpfelup.mod
   restat = 1
 
 build CMakeFiles/MADYNCAL.dir/NETSOLVERS/BUSUP.f90.o | busup.mod: dyndep
