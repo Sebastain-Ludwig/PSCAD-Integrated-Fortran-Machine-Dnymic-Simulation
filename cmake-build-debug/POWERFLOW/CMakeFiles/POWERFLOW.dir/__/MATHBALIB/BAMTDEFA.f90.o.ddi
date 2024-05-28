@@ -1,0 +1,25 @@
+{
+	"revision" : 0,
+	"rules" : 
+	[
+		{
+			"outputs" : [],
+			"primary-output" : "POWERFLOW/CMakeFiles/POWERFLOW.dir/__/MATHBALIB/BAMTDEFA.f90.o",
+			"provides" : 
+			[
+				{
+					"compiled-module-path" : "POWERFLOW/bamtdefa.mod",
+					"is-interface" : true,
+					"logical-name" : "bamtdefa.mod"
+				}
+			],
+			"requires" : 
+			[
+				{
+					"logical-name" : "iso_fortran_env.mod"
+				}
+			]
+		}
+	],
+	"version" : 0
+}
