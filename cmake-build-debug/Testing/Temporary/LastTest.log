@@ -1,10 +1,10 @@
-Start testing: May 28 20:58 CST
+Start testing: May 30 15:59 CST
 ----------------------------------------------------------
 6/6 Testing: PQPFTESTS
 6/6 Test: PQPFTESTS
 Command: "/home/sebastian/Project/POWERSYSDYN/FORTRAN SCRIPTS/MACHINE-DYNAMIC-SIMULATION/cmake-build-debug/bin/PQPFTESTS"
 Directory: /home/sebastian/Project/POWERSYSDYN/FORTRAN SCRIPTS/MACHINE-DYNAMIC-SIMULATION/cmake-build-debug/Testing
-"PQPFTESTS" start time: May 28 20:58 CST
+"PQPFTESTS" start time: May 30 15:59 CST
 Output:
 ----------------------------------------------------------
  -1.4145747E-02   1.601825      0.8352531     -2.8082132E-02 -0.8761719    
@@ -558,13 +558,13 @@ Output:
          183
    1.040000       1.025000       1.025000       1.026474       1.013799    
    1.032751       1.016706       1.026393      0.9970517    
-  3.8230000E-03
+  4.4890000E-03
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"PQPFTESTS" end time: May 28 20:58 CST
+"PQPFTESTS" end time: May 30 15:59 CST
 "PQPFTESTS" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: May 28 20:58 CST
+End testing: May 30 15:59 CST
